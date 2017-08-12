@@ -20,7 +20,7 @@ namespace practice10
         {
             Info = info;
             Next = null;
-            Previous = prev
+            Previous = prev;
         }
         public static implicit operator bool(Point point)
         {

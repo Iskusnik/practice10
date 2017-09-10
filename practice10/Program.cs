@@ -24,8 +24,13 @@ namespace practice10
 
             #region Ввод
             Console.WriteLine("Введите количество элементов");
-
             N = int.Parse(Console.ReadLine());
+            while (N < 2)
+            {
+                Console.WriteLine("Формула не может быть посчитана для данного числа элементов");
+                Console.WriteLine("Введите количество элементов");
+                N = int.Parse(Console.ReadLine());
+            }
             Console.WriteLine("0 - Не случайно");
             Console.WriteLine("Не 0 - Случайное заполнение списка");
 
